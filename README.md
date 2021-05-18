@@ -4,10 +4,6 @@
 - Built a secondary product detail view, showing more information about the product, like the description.
 - Built with code separation, readability, maintainability, testing, and error handling in mind.
 
-- State management
-- Pagination in the product list
-- Responsive Layout
-
 Snapshots:
 
   <p align="center">
