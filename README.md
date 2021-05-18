@@ -7,3 +7,21 @@
 - State management
 - Pagination in the product list
 - Responsive Layout
+
+Snapshots:
+
+  <p align="center">
+    <img src="snippets/featured.png" width="70%">
+  </p>
+
+  <p align="center">
+    <img src="snippets/searched1.png" width="70%">
+  </p>
+
+  <p align="center">
+    <img src="snippets/searched2.png" width="70%">
+  </p>
+
+  <p align="center">
+    <img src="snippets/productdetail.png" width="70%">
+  </p>
