@@ -1,0 +1,12 @@
+.review-stars {
+  color: #aaa;
+}
+
+.stars-checked {
+  color: orange;
+}
+
+.review-counts {
+  margin-left: 0.2rem;
+  font-size: 0.8rem;
+}

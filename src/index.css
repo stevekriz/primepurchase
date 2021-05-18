@@ -1,0 +1,65 @@
+/*
+Primary: #84BCDA
+Secondary: #AAFCB8
+*/
+
+@media (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.primary-color {
+  background-color: #84bcda !important;
+}
+
+.secondary-color {
+  background-color: #aafcb8 !important;
+}
+
+body {
+  background-color: #eee;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.tile {
+  border-radius: 0.5rem;
+  background-color: white;
+  display: flex;
+  box-shadow: 0 0 1.25rem #aaa;
+}
+
+#not-found {
+  max-width: 89rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0 1.25rem #aaa;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-display {
+  display: none;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
