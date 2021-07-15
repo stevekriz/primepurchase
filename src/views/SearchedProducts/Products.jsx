@@ -5,7 +5,7 @@ import ProductItem from './ProductItem';
 const Products = ({ products }) => {
   return (
     <div>
-      {products.map(product => (
+      {products.map((product) => (
         <ProductItem key={product.sku} product={product} />
       ))}
     </div>

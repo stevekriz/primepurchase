@@ -10,7 +10,7 @@ const Header = ({ total, currentSort, handleSort }) => {
 
   const title = getTitle();
 
-  const handleClick = name => {
+  const handleClick = (name) => {
     if (name === currentSort) return;
     handleSort(name);
   };
@@ -22,21 +22,21 @@ const Header = ({ total, currentSort, handleSort }) => {
         Sort By:
         <DropdownButton id='dropdown-basic-button' title={title}>
           <Dropdown.Item
-            onClick={e => handleClick(e.currentTarget.name)}
+            onClick={(e) => handleClick(e.currentTarget.name)}
             name={'bestMatch'}
             active={currentSort === 'bestMatch'}
           >
             Best Match
           </Dropdown.Item>
           <Dropdown.Item
-            onClick={e => handleClick(e.currentTarget.name)}
+            onClick={(e) => handleClick(e.currentTarget.name)}
             name={'salePrice.asc'}
             active={currentSort === 'salePrice.asc'}
           >
             Price Low to High
           </Dropdown.Item>
           <Dropdown.Item
-            onClick={e => handleClick(e.currentTarget.name)}
+            onClick={(e) => handleClick(e.currentTarget.name)}
             name={'salePrice.desc'}
             active={currentSort === 'salePrice.desc'}
           >

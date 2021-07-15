@@ -27,7 +27,7 @@ const FeaturedProducts = () => {
       <h1>Featured Products</h1>
       <div className='product-container'>
         {!error ? (
-          products.map(product => <Product key={product.sku} {...product} />)
+          products.map((product) => <Product key={product.sku} {...product} />)
         ) : (
           <div>{error}</div>
         )}

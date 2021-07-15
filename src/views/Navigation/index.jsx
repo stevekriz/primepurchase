@@ -7,7 +7,7 @@ import './navigation.css';
 const Navigation = () => {
   const [search, setSearch] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (search) history.push(`/products?search=${search}`);
   };
@@ -35,7 +35,7 @@ const Navigation = () => {
             placeholder='Find a product'
             aria-label='product search'
             value={search}
-            onChange={e => setSearch(e.currentTarget.value)}
+            onChange={(e) => setSearch(e.currentTarget.value)}
           />
           <Button type='submit' variant='outline-light'>
             Search

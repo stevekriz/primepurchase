@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './index.css';
 
-const Ratings = props => (
+const Ratings = (props) => (
   <div>
     {[...Array(props.numberOfStars).keys()].map((s, index) => (
       <span

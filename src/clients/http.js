@@ -4,11 +4,11 @@ import { apiKey } from '../config.json';
 const authAxios = axios.create();
 
 authAxios.interceptors.request.use(
-  config => {
+  (config) => {
     config.params.apiKey = apiKey;
     return config;
   },
-  error => {
+  (error) => {
     return Promise.reject(error);
   }
 );

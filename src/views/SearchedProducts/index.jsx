@@ -47,7 +47,7 @@ const SearchedProducts = ({ location }) => {
     }
   };
 
-  const handlePageChange = page => {
+  const handlePageChange = (page) => {
     const params = new URLSearchParams(location.search);
     if (params.has('page')) params.delete('page');
     if (page && page !== 1) params.set('page', page);
@@ -61,7 +61,7 @@ const SearchedProducts = ({ location }) => {
     });
   };
 
-  const handleSort = name => {
+  const handleSort = (name) => {
     const params = new URLSearchParams(location.search);
     if (params.has('page')) params.delete('page');
     if (name && name !== 'bestMatch') params.set('sort', name);

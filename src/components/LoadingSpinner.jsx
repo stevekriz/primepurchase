@@ -1,7 +1,7 @@
 import React from 'react';
 import { Spinner } from 'react-bootstrap';
 
-const LoadingSpinner = props => {
+const LoadingSpinner = (props) => {
   const containerStyle = {
     position: 'absolute',
     left: '50%',

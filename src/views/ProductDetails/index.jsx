@@ -60,19 +60,19 @@ const ProductDetails = ({ match }) => {
     'no-display': state.currentPrice >= state.regularPrice,
   });
 
-  const decodeHTML = html => {
+  const decodeHTML = (html) => {
     const el = document.createElement('textarea');
     el.innerHTML = html;
     return el.value;
   };
 
-  const handleTruncate = truncated => {
+  const handleTruncate = (truncated) => {
     if (state.truncated !== truncated) {
       dispatch({ type: 'update', payload: { truncated } });
     }
   };
 
-  const toggleExpand = e => {
+  const toggleExpand = (e) => {
     e.preventDefault();
     dispatch({ type: 'update', payload: { expanded: !state.expanded } });
   };

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-export const generateProductQuery = attributes => {
+export const generateProductQuery = (attributes) => {
   let productQuery = '';
   if (_.isPlainObject(attributes) && !_.isEmpty(attributes)) {
     for (const key in attributes) {
@@ -11,7 +11,7 @@ export const generateProductQuery = attributes => {
   return productQuery;
 };
 
-export const getSingleProductView = data => {
+export const getSingleProductView = (data) => {
   const { products } = data;
   const {
     alternateViewsImage,
@@ -53,9 +53,9 @@ export const getSingleProductView = data => {
   };
 };
 
-export const getSearchView = data => {
+export const getSearchView = (data) => {
   const { products, total } = data;
-  const productShapes = products.map(p => {
+  const productShapes = products.map((p) => {
     const {
       customerReviewAverage,
       customerReviewCount,
@@ -83,9 +83,9 @@ export const getSearchView = data => {
   return { total, products: productShapes };
 };
 
-export const getFeaturedView = data => {
+export const getFeaturedView = (data) => {
   const { results } = data;
-  return results.map(p => {
+  return results.map((p) => {
     const { names, prices, images, descriptions, customerReviews, sku } = p;
     return {
       currentPrice: prices.current,

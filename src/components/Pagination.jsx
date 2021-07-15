@@ -29,7 +29,7 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
 
   const { pages, totalPages } = getPages();
 
-  const setPage = page => {
+  const setPage = (page) => {
     if (page < 1 || page > totalPages) return;
     onPageChange(page);
   };
@@ -44,7 +44,7 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
         onClick={() => setPage(currentPage - 1)}
         disabled={currentPage === 1}
       />
-      {pages.map(page => (
+      {pages.map((page) => (
         <BootstrapPagination.Item
           key={page}
           active={currentPage === page}
